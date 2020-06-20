@@ -48,15 +48,17 @@ body{
 }
 
 .portfolio-item-wrapper{
-    position:relative;
+    display:flex;
+    flex-direction: column;
     }
 
-.portfolio-img-background{
-    height: 350px;
-    width: 100%;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+.logo-wrapper{
+    width: 30%;
+    height: 150px;
+}
+
+.subtitle{
+    flex-grow: 1:
 }
 
 .wrapper{
