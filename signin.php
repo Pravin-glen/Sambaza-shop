@@ -45,7 +45,7 @@
             </label>
           </div>
         </div>
-        <button type="submit" class="btn btn-primary">Sign in</button>
+        <button type="submit" class="btn btn-primary">Sign up</button>
       </form>
       <?php
     include("includes/footer.php");
