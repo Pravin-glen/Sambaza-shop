@@ -3,75 +3,41 @@
     
 ?>
 
-  <style>
-.dropbtn {
-  background-color: #4CAF50;
-  color: white;
-  padding: 16px;
-  font-size: 16px;
-  border: none;
-  position: relative;
-}
 
-.dropdown {
-  position: relative;
-  display: inline-block;
-}
-
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f1f1f1;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-}
-
-.dropdown-content a {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-}
-
-.dropdown-content a:hover {background-color: #ddd;}
-
-.dropdown:hover .dropdown-content {display: block;}
-
-.dropdown:hover .dropbtn {background-color: #3e8e41;}
-</style>
 <div class="w3-container w3-azure">
 <div class="dropdown">
-  <button class="dropbtn">Electronics</button>
-  <div class="dropdown-content">
-    <a href="#">Phone and Phones acessories</a>
-    <a href="#">Appliances</a>
-    <a href="#">Computing and computing accessories</a>
+  <button class="dropbtn dropdown-toggle">Electronics</button>
+  <div class="dropdown-menu">
+    <a class="dropdown-item"href="#">Phone and Phones acessories</a>
+    <a class="dropdown-item"href="#">Appliances</a>
+    <a class="dropdown-item" href="#">Computing and computing accessories</a>
+    <
   </div>
 </div>
 <div class="dropdown">
-  <button class="dropbtn">Produces</button>
-  <div class="dropdown-content">
-    <a href="#">Vegetables</a>
-    <a href="#">Fruits</a>
-    <a href="#">Dairy products</a>
-    <a href="#">Cereals</a>
+  <button class="dropbtn dropdown-toggle">Produces</button>
+  <div class="dropdown-menu">
+    <a class="dropdown-item" href="#">Vegetables</a>
+    <a class="dropdown-item" href="#">Fruits</a>
+    <a class="dropdown-item" href="#">Dairy products</a>
+    <a class="dropdown-item" href="#">Cereals</a>
   </div>
 </div>
 <div class="dropdown">
   <button class="dropbtn">Household supplies</button>
-  <div class="dropdown-content">
-    <a href="#">luandry </a>
-    <a href="#">House cleaners</a>
-    <a href="#">Bulbs and batteries</a>
+  <div class="dropdown-menu bg-blacks">
+    <a class="dropdown-item" href="#">luandry </a>
+    <a class="dropdown-item" href="#">House cleaners</a>
+    <a class="dropdown-item" href="#">Bulbs and batteries</a>
   </div>
+</div>  
   <div class="dropdown">
   <button class="dropbtn">Fashion/Lifestyle</button>
-  <div class="dropdown-content">
-    <a href="#">Mens Fashion</a>
-    <a href="#">Womens Fashion</a>
-    <a href="#">Kids Fashion</a>
-    <a href="#">Exclusive Fashion</a>
+  <div class="dropdown-menu">
+    <a class="dropdown-item" href="#">Mens Fashion</a>
+    <a class="dropdown-item" href="#">Womens Fashion</a>
+    <a class="dropdown-item" href="#">Kids Fashion</a>
+    <a class="dropdown-item" href="#">Exclusive Fashion</a>
   </div>
 </div>
 </div>
@@ -80,8 +46,11 @@
 
 </nav>
 <!-- navbar -->
-    <link rel="stylesheet" href="styles.css" />
-    <!---Image Sliding-->      
+  <main class="top-section">
+  <nav class="vertical-menu">
+  </nav>
+    <!---Image Sliding-->
+    <article class="slides">
     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
     <ul class="carousel-indicators">
         <li data-target="#slides" data-slide-to="0" class="active"></li>
@@ -115,9 +84,15 @@
                 <button type="button" class="btn btn-primary btn-lg">Get Started</button>
             </div>
         </div>
-            
+          
     </div>
     </div>
+    </article>
+
+  <aside class="adverts">
+  </aside>  
+  </main>
+  <section>  
     <div class="container-fluid">
     <div class="row jumbotron">
         <div class="col-xs-10 col-sm-10 col-md-9 col-lg-5 col-xl-10">
@@ -144,6 +119,10 @@
           </div>
         </div>
       </div>
+  </section>
+  <section class="featured-products">
+   
+  </section>    
    <?php
     include("includes/footer.php");
     ?>

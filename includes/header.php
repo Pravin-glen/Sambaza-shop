@@ -8,7 +8,7 @@
           <script src="https:use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
           <link rel="stylesheet" href="styles.css" />
           <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-                    
+          <link rel="stylesheet" href="categories.css" />          
     <head>
     <body>
         
