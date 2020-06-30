@@ -1,6 +1,85 @@
 <?php
     include("includes/header.php");
+    
 ?>
+
+  <style>
+.dropbtn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  position: relative;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
+</style>
+<div class="w3-container w3-azure">
+<div class="dropdown">
+  <button class="dropbtn">Electronics</button>
+  <div class="dropdown-content">
+    <a href="#">Phone and Phones acessories</a>
+    <a href="#">Appliances</a>
+    <a href="#">Computing and computing accessories</a>
+  </div>
+</div>
+<div class="dropdown">
+  <button class="dropbtn">Produces</button>
+  <div class="dropdown-content">
+    <a href="#">Vegetables</a>
+    <a href="#">Fruits</a>
+    <a href="#">Dairy products</a>
+    <a href="#">Cereals</a>
+  </div>
+</div>
+<div class="dropdown">
+  <button class="dropbtn">Household supplies</button>
+  <div class="dropdown-content">
+    <a href="#">luandry </a>
+    <a href="#">House cleaners</a>
+    <a href="#">Bulbs and batteries</a>
+  </div>
+  <div class="dropdown">
+  <button class="dropbtn">Fashion/Lifestyle</button>
+  <div class="dropdown-content">
+    <a href="#">Mens Fashion</a>
+    <a href="#">Womens Fashion</a>
+    <a href="#">Kids Fashion</a>
+    <a href="#">Exclusive Fashion</a>
+  </div>
+</div>
+</div>
+
+  <!-- Collapsible content -->
+
+</nav>
+<!-- navbar -->
     <link rel="stylesheet" href="styles.css" />
     <!---Image Sliding-->      
     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
@@ -15,7 +94,7 @@
             <div class="carousel-caption">
                 <h1 class="display-2">Sambaza shop</h1>
                 <h3>The Sambaza website</h3>
-                <button type="button" class="btn btn-outline-light btn-lg">WELCOME</button>
+                <button type="button" class="btn btn-outline-light btn-lg">Customers</button>
                 <button type="button" class="btn btn-primary btn-lg">Get Started</button>
             </div>
         </div> <div class="carousel-item">
@@ -28,7 +107,7 @@
             </div>
         </div>
         <div class="carousel-item">
-            <img src="images/customer1.jpg">
+            <img src="images/supermarket.jpg">
             <div class="carousel-caption">
                 <h1 class="display-2">Sambaza shop</h1>
                 <h3>The Sambaza website</h3>
