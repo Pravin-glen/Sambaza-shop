@@ -6,7 +6,7 @@
 
 <!-- navbar end -->
 <main class="top-section">
-    <nav class="vertical-menu nav flex-column">
+    <nav class="vertical-menu nav flex-column bg-warning">
         <div class="dropdown">
           <button class="dropbtn dropdown-toggle">Electronics</button>
           <div class="dropdown-menu">
@@ -45,16 +45,16 @@
     <!---Image Sliding-->
     <article class="slides">
       <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
-        <ol class="carousel-indicators">
+        <ul class="carousel-indicators">
           <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
           <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
           <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
-        </ol>
+        </ul>
         <div class="carousel-inner">
           <div class="carousel-item active">
             <img src="images/producer2.jpg" class="d-block w-100" alt="...">
             <div class="carousel-caption d-none d-md-block">
-              <h5>First slide label</h5>
+              <h1>The Sambaza shop website</h1>
               <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
             </div>
           </div>
