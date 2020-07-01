@@ -1,55 +1,59 @@
 .dropbtn {
-    background-color: #4CAF50;
     color: white;
     padding: 16px;
     font-size: 16px;
     border: none;
-    position: relative;
+    width: 100%;
   }
   
   .dropdown {
-    position: relative;
-    display: inline-block;
+    width: 100%;
   }
   
-  .dropdown-content {
+  .dropdown-menu {
     display: none;
     position: absolute;
-    background-color: #f1f1f1;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
+
   }
   
-  .dropdown-content a {
+  .dropdown-menu a {
     color: black;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
   }
   
-  .dropdown-content a:hover {background-color: #ddd;}
+  .dropdown-menu a:hover {background-color: #ddd;}
     
-  .dropdown:hover .dropbtn {background-color: #3e8e41;}
-
-  .bg-blacks{
-      background-color: black;
-  }
+  .dropdown:hover .dropbtn {background-color: #3e8e41;} 
 
   .top-section{
       display: flex;
       flex-direction: row;
-      height: 75px;
+      height: 100%;
+      margin: 5px;
   }
 
   .vertical-menu{
       width: 25%;
       flex-shrink: 1;
+      border: 2px solid grey;
+      margin: 0px 5px;
+      background-color: #4CAF50;
 
   }
   .adverts{
       width: 25%;
+      border: 2px solid grey;
+      margin: 0px 5px;
   }
   .slides{
      flex-grow: 1;
+  }
+  .about-us{
+    display: flex;
+    flex-direction: row;
   }

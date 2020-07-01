@@ -7,6 +7,10 @@ body{
     grid-template-columns: 1fr;
 }
 
+.body {
+    background-color: black;
+  }
+
 
 .nav-wrapper{
     display: flex;
@@ -39,7 +43,7 @@ body{
 }
 
 .nav-link-wrapper a:hover{
-    color: white;
+    color: black;
 }
 
 .portfolio-items-wrapper{
@@ -52,13 +56,13 @@ body{
     flex-direction: column;
     }
 
-.logo-wrapper{s
+.logo-wrapper{
     width: 30%;
     height: 150px;
 }
 
 .subtitle{
-    flex-grow: 1:
+    flex-grow: 1;
 }
 
 .wrapper{
