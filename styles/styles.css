@@ -14,5 +14,8 @@
 
 
 .dropdown:hover .dropdown-menu {display: block;}
+footer{
+    align-items: center;
+}
 
 
