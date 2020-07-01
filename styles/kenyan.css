@@ -56,13 +56,13 @@ body{
     flex-direction: column;
     }
 
-.logo-wrapper{s
+.logo-wrapper{
     width: 30%;
     height: 150px;
 }
 
 .subtitle{
-    flex-grow: 1:
+    flex-grow: 1;
 }
 
 .wrapper{
