@@ -55,7 +55,7 @@
             <img src="images/producer2.jpg" class="d-block w-100" alt="...">
             <div class="carousel-caption d-none d-md-block">
               <h1>The Sambaza shop website</h1>
-              <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+              <p>Smart and convinient shopping.</p>
             </div>
           </div>
           <div class="carousel-item">
@@ -90,65 +90,160 @@
   </main>
 
 
-<ol>
-  <h2>Top selling items</h2>
-</ol>
-<div class="row">
-  <div class="col-sm-3">
-      <div class="card-body" Style="width: 100%">
-        <img class="card-img-top" src="images/picture1.jpg" style="width:50%"> 
-        <h5 class="card-title">Samsung tv</h5>
-        <p class="card-text">Ksh 50000</p>
-        <a href="#" class="btn btn-primary">BUY</a>
+  <div class="container">
+        <h1>TOP SELLING PRODUCTS</h1>
       </div>
-  </div>
-
-  <div class="col-sm-3">
-      <div class="card-body" Style="width: 100%">
-        <img class="card-img-top" src="images/picture1.jpg" style="width:50%"> 
-        <h5 class="card-title">Samsung tv</h5>
-        <p class="card-text">Ksh 50000</p>
-        <a href="#" class="btn btn-primary">BUY</a>
-      </div>
-  </div>
-
-
-
-  <section class="about-us">
-      <div class="container">
-        <div class="card" style="width:400px">
-          <img class="card-img-top" src="images/picture1.jpg" alt="MISSION" style="width:100%">
-          <div class="card-body">
-            <h4 class="card-title">MISSION</h4>
-            <p class="card-text">Samabaza shop kenya is aimed at ensuring that the lives of people </br>
-            in the trading sector get to sell products that is at their disposal</p>
-            <a href="#" class="btn btn-primary stretched-link">See Profile</a>
+      <div class="grid-container">
+      <div class="row">
+       <div class="col-md-3">
+        <img src="images/2018 apple macbook air (499$).jpg" alt="Avatar" style="width:100%">
+        <div class="container">
+          <h5><b>2018 apple macbook air</b></h5> 
+          <p>PRICE 50000ksh</p> 
+          <div class="overlay">
+            <button type="button" class="btn btn-secondary" title="more like this"><i class="fa fa-eye"></i></button>
+            <button type="button" class="btn btn-secondary" title="Add to cart"><i class="fa fa-shopping-cart"></i></button>
+            <label>QUANTITY:</label>
+            <input type="text" value="1">
           </div>
         </div>
-      </div>
-      <div class="container">
-        <div class="card" style="width:400px">
-          <img class="card-img-top" src="images/picture1.jpg" alt="MISSION" style="width:100%">
-          <div class="card-body">
-            <h4 class="card-title">Vision</h4>
-            <p class="card-text">Samabaza shop kenya is aimed at ensuring that the lives of people </br>
-            in the trading sector get to sell products that is at their disposal</p>
-            <a href="#" class="btn btn-primary stretched-link">See Profile</a>
-          </div>
+        <div class="product-bottom text-center">
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star-half-o"></i>
+          <i class="fa fa-star-o"></i>
         </div>
-      </div>
-      <div class="container">
-        <div class="card" style="width:400px">
-          <img class="card-img-top" src="images/picture1.jpg" alt="MISSION" style="width:100%">
-          <div class="card-body">
-            <h4 class="card-title">MISSION</h4>
-            <p class="card-text">Samabaza shop kenya is aimed at ensuring that the lives of people </br>
-            in the trading sector get to sell products that is at their disposal</p>
-            <a href="#" class="btn btn-primary stretched-link">See Profile</a>
-          </div>
         </div>
+        <div class="col-md-3">
+          <img src="images/DIGITAL-MICROWAVE.jpg" alt="Avatar" style="width:100%">
+          <div class="container">
+            <h5><b>Digital Microwave</b></h5> 
+            <p>PRICE 7000ksh</p> 
+            <div class="overlay">
+              <button type="button" class="btn btn-secondary" title="more like this "><i class="fa fa-eye"></i></button>
+              <button type="button" class="btn btn-secondary" title="Add to cart"><i class="fa fa-shopping-cart"></i></button>
+            </div>
+          </div>
+          <div class="product-bottom text-center">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-half-o"></i>
+            <i class="fa fa-star-o"></i>
+          </div>
+          </div>
+          <div class="col-md-3">
+            <img src="images/DOUBLE-DOOR-FRIDGE.jpg" alt="Avatar" style="width:100%">
+            <div class="container">
+              <h5><b>Double door fridge </b></h5> 
+              <p>PRICE 60000ksh</p> 
+              <div class="overlay">
+                <button type="button" class="btn btn-secondary" title="more like this"><i class="fa fa-eye"></i></button>
+                <button type="button" class="btn btn-secondary" title="Add to cart"><i class="fa fa-shopping-cart"></i></button>
+              </div>
+            </div>
+            <div class="product-bottom text-center">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star-half-o"></i>
+              <i class="fa fa-star-o"></i>
+            </div>
+            </div>
+            <div class="col-md-3">
+              <img src="images/HD-DIGITAL-TV.jpg" alt="Avatar" style="width:100%">
+              <div class="container">
+                <h5><b>HD digital tv</b></h5> 
+                <p>PRICE 20000ksh</p> 
+                <div class="overlay">
+                  <button type="button" class="btn btn-secondary" title="more like this"><i class="fa fa-eye"></i></button>
+                  <button type="button" class="btn btn-secondary" title="Add to cart"><i class="fa fa-shopping-cart"></i></button>
+                </div>
+              </div>
+              <div class="product-bottom text-center">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-half-o"></i>
+                <i class="fa fa-star-o"></i>
+              </div>
+              </div>
       </div>
-  </section>
+      <div class="row">
+        <div class="col-md-3">
+         <img src="images/MULTIMEDIA SUBWOOFER.jpg" alt="Avatar" style="width:100%">
+         <div class="container">
+           <h5><b>Multimedia Subwoofer</b></h5> 
+           <p>PRICE 3000ksh</p> 
+           <div class="overlay">
+             <button type="button" class="btn btn-secondary" title="more like this"><i class="fa fa-eye"></i></button>
+             <button type="button" class="btn btn-secondary" title="Add to cart"><i class="fa fa-shopping-cart"></i></button>
+           </div>
+         </div>
+         <div class="product-bottom text-center">
+           <i class="fa fa-star"></i>
+           <i class="fa fa-star"></i>
+           <i class="fa fa-star"></i>
+           <i class="fa fa-star-half-o"></i>
+           <i class="fa fa-star-o"></i>
+         </div>
+         </div>
+         <div class="col-md-3">
+          <img src="images/CCTV SECURITY CAMERAS.jpg" alt="Avatar" style="width:100%">
+          <div class="container">
+            <h5><b>CCTV security CAMERAS</b></h5> 
+            <p>PRICE 10000ksh</p> 
+            <div class="overlay">
+              <button type="button" class="btn btn-secondary" title="more like this"><i class="fa fa-eye"></i></button>
+              <button type="button" class="btn btn-secondary" title="Add to cart"><i class="fa fa-shopping-cart"></i></button>
+            </div>
+          </div>
+          <div class="product-bottom text-center">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-half-o"></i>
+            <i class="fa fa-star-o"></i>
+          </div>
+          </div>
+          <div class="col-md-3">
+            <img src="images/SAMSUNG-GALAXY-A11.jpg" alt="Avatar" style="width:100%">
+            <div class="container">
+              <h5><b>SAMSUNG-GALAXY-A11 PHONE brand new</b></h5> 
+              <p>PRICE 11000ksh</p> 
+              <div class="overlay">
+                <button type="button" class="btn btn-secondary" title="more like this"><i class="fa fa-eye"></i></button>
+                <button type="button" class="btn btn-secondary" title="Add to cart"><i class="fa fa-shopping-cart"></i></button>
+              </div>
+            </div>
+            <div class="product-bottom text-center">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star-half-o"></i>
+              <i class="fa fa-star-o"></i>
+            </div>
+            </div>
+            <div class="col-md-3">
+              <img src="images/sony-ps4-console+fifa.jpg" alt="Avatar" style="width:100%">
+              <div class="container">
+                <h5><b>sony-ps4-console plus fifa 20 game included</b></h5> 
+                <p>PRICE 70000ksh</p> 
+                <div class="overlay">
+                  <button type="button" class="btn btn-secondary" title="more like this"><i class="fa fa-eye"></i></button>
+                  <button type="button" class="btn btn-secondary" title="Add to cart"><i class="fa fa-shopping-cart"></i></button>
+                </div>
+              </div>
+              <div class="product-bottom text-center">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-half-o"></i>
+                <i class="fa fa-star-o"></i>
+              </div>
+         </div>
+         </div>
 
 
   <section class="featured-products">
