@@ -8,11 +8,11 @@
 <main class="top-section">
     <nav class="vertical-menu nav flex-column bg-warning">
         <div class="dropdown">
-          <button class="dropbtn dropdown-toggle">Electronics</button>
+          <button class="dropbtn dropdown-toggle>Electronics</button>
           <div class="dropdown-menu">
-            <a class="dropdown-item"href="#">Phone and Phones acessories</a>
-            <a class="dropdown-item"href="#">Appliances</a>
-            <a class="dropdown-item" href="#">Computing and computing accessories</a>
+            <a class="dropdown-item"href="products.html">Phone and Phones acessories</a>
+            <a class="dropdown-item"href="products.html">Appliances</a>
+            <a class="dropdown-item" href="products.html">Computing and computing accessories</a>
           </div>
         </div>
         <div class="dropdown">
@@ -52,7 +52,7 @@
         </ul>
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img src="images/producer2.jpg" class="d-block w-100" alt="...">
+            <img src="images/producer2.jpg" style="width=100;" alt="...">
             <div class="carousel-caption d-none d-md-block">
               <h1>The Sambaza shop website</h1>
               <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
