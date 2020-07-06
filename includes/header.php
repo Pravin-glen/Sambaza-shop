@@ -39,6 +39,8 @@
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="feedback.php">feeback</a>
+            </li><li class="nav-item">
+                <a class="nav-link" href="About.html">About</a>
             </li>
             
           </ul>
