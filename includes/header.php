@@ -8,7 +8,8 @@
           <script src="https:use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
           <link rel="stylesheet" href="styles/styles.css" />
           <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-          <link rel="stylesheet" href="styles/categories.css" />          
+          <link rel="stylesheet" href="styles/categories.css" />    
+                
     <head>
     <body>
         
@@ -41,6 +42,9 @@
                 <a class="nav-link" href="feedback.php">feeback</a>
             </li><li class="nav-item">
                 <a class="nav-link" href="About.html">About</a>
+            </li>
+            </li><li class="nav-item">
+                <a class="nav-link" href="addproduct.php">Admin</a>
             </li>
             
           </ul>

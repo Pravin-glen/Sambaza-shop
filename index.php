@@ -10,15 +10,10 @@
         <div class="dropdown">
           <button class="dropbtn dropdown-toggle">Electronics</button>
           <div class="dropdown-menu">
-<<<<<<< HEAD
-            <a class="dropdown-item"href="products.html">Phone and Phones acessories</a>
-            <a class="dropdown-item"href="products.html">Appliances</a>
-            <a class="dropdown-item" href="products.html">Computing and computing accessories</a>
-=======
+
             <a class="dropdown-item"href="phonesandaccess.html">Phone and Phones acessories</a>
             <a class="dropdown-item"href="#">Appliances</a>
             <a class="dropdown-item" href="#">Computing and computing accessories</a>
->>>>>>> 147ef33794e574c97a0dbd3f3fe37337a0f7b92e
           </div>
         </div>
         <div class="dropdown">
