@@ -8,7 +8,7 @@
 <main class="top-section">
     <nav class="vertical-menu nav flex-column bg-warning">
         <div class="dropdown">
-          <button class="dropbtn dropdown-toggle>Electronics</button>
+          <button class="dropbtn dropdown-toggle">Electronics</button>
           <div class="dropdown-menu">
             <a class="dropdown-item"href="products.html">Phone and Phones acessories</a>
             <a class="dropdown-item"href="products.html">Appliances</a>
@@ -18,7 +18,7 @@
         <div class="dropdown">
           <button class="dropbtn dropdown-toggle">Produces</button>
           <div class="dropdown-menu">
-            <a class="dropdown-item" href="#">Vegetables</a>
+            <a class="dropdown-item" href="produce.html">Vegetables</a>
             <a class="dropdown-item" href="#">Fruits</a>
             <a class="dropdown-item" href="#">Dairy products</a>
             <a class="dropdown-item" href="#">Cereals</a>
@@ -52,21 +52,21 @@
         </ul>
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img src="images/producer2.jpg" style="width=100;" alt="...">
+            <img src="images/mega-discount.jpg" style="width=88%;" alt="...">
             <div class="carousel-caption d-none d-md-block">
               <h1>The Sambaza shop website</h1>
               <p>Smart and convinient shopping.</p>
             </div>
           </div>
           <div class="carousel-item">
-            <img src="images/shop.jpg" class="d-block w-100" alt="...">
+            <img src="images/mega-discount2.jpg" class="d-block w-100" alt="...">
             <div class="carousel-caption d-none d-md-block">
               <h5>Second slide label</h5>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
             </div>
           </div>
           <div class="carousel-item">
-            <img src="images/supermarket.jpg" class="d-block w-100" alt="...">
+            <img src="images/mega-discount3.jpg" class="d-block w-100" alt="...">
             <div class="carousel-caption d-none d-md-block">
               <h5>Third slide label</h5>
               <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
@@ -103,8 +103,6 @@
           <div class="overlay">
             <button type="button" class="btn btn-secondary" title="more like this"><i class="fa fa-eye"></i></button>
             <button type="button" class="btn btn-secondary" title="Add to cart"><i class="fa fa-shopping-cart"></i></button>
-            <label>QUANTITY:</label>
-            <input type="text" value="1">
           </div>
         </div>
         <div class="product-bottom text-center">
