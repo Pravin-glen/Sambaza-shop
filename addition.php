@@ -215,3 +215,68 @@
         </div>
       </nav>
 
+      <ol>
+  <h2>Top selling items</h2>
+</ol>
+<div class="row">
+  <div class="col-sm-3">
+      <div class="card-body" Style="width: 100%">
+        <img class="card-img-top" src="images/picture1.jpg" style="width:50%"> 
+        <h5 class="card-title">Samsung tv</h5>
+        <p class="card-text">Ksh 50000</p>
+        <a href="#" class="btn btn-primary">BUY</a>
+      </div>
+  </div>
+
+  <div class="col-sm-3">
+      <div class="card-body" Style="width: 100%">
+        <img class="card-img-top" src="images/picture1.jpg" style="width:50%"> 
+        <h5 class="card-title">Samsung tv</h5>
+        <p class="card-text">Ksh 50000</p>
+        <a href="#" class="btn btn-primary">BUY</a>
+      </div>
+  </div>
+
+
+
+  <section class="about-us">
+      <div class="container">
+        <div class="card" style="width:400px">
+          <img class="card-img-top" src="images/picture1.jpg" alt="MISSION" style="width:100%">
+          <div class="card-body">
+            <h4 class="card-title">MISSION</h4>
+            <p class="card-text">Samabaza shop kenya is aimed at ensuring that the lives of people </br>
+            in the trading sector get to sell products that is at their disposal</p>
+            <a href="#" class="btn btn-primary stretched-link">See Profile</a>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="card" style="width:400px">
+          <img class="card-img-top" src="images/picture1.jpg" alt="MISSION" style="width:100%">
+          <div class="card-body">
+            <h4 class="card-title">Vision</h4>
+            <p class="card-text">Samabaza shop kenya is aimed at ensuring that the lives of people </br>
+            in the trading sector get to sell products that is at their disposal</p>
+            <a href="#" class="btn btn-primary stretched-link">See Profile</a>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="card" style="width:400px">
+          <img class="card-img-top" src="images/picture1.jpg" alt="MISSION" style="width:100%">
+          <div class="card-body">
+            <h4 class="card-title">MISSION</h4>
+            <p class="card-text">Samabaza shop kenya is aimed at ensuring that the lives of people </br>
+            in the trading sector get to sell products that is at their disposal</p>
+            <a href="#" class="btn btn-primary stretched-link">See Profile</a>
+          </div>
+        </div>
+      </div>
+  </section>
+  <div class="overlay">
+            <button type="button" class="btn btn-secondary" title="more like this"><i class="fa fa-eye"></i></button>
+            <button type="button" class="btn btn-secondary" title="Add to cart"><i class="fa fa-shopping-cart"></i></button>
+            <label>QUANTITY:</label>
+            <input type="text" value="1">
+          </div>
