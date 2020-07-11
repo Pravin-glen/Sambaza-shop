@@ -1,0 +1,22 @@
+.content-wrapper{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}
+main{
+    flex-grow: 1;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-shrink: 0;
+    padding: 10px;
+}
+aside{
+    width: 25%;
+    background-color: grey;
+    flex-shrink: 0;
+}
+article{
+    flex-grow: 1;
+    padding: 10px;
+}
