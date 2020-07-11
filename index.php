@@ -10,7 +10,6 @@
         <div class="dropdown">
           <button class="dropbtn dropdown-toggle">Electronics</button>
           <div class="dropdown-menu">
-
             <a class="dropdown-item"href="phonesandaccess.html">Phone and Phones acessories</a>
             <a class="dropdown-item"href="#">Appliances</a>
             <a class="dropdown-item" href="#">Computing and computing accessories</a>
@@ -28,7 +27,7 @@
         <div class="dropdown">
           <button class="dropbtn dropdown-toggle">Household supplies</button>
           <div class="dropdown-menu">
-            <a class="dropdown-item" href="#">luandry </a>
+            <a class="dropdown-item" href="householditems.html">luandry </a>
             <a class="dropdown-item" href="#">House cleaners</a>
             <a class="dropdown-item" href="#">Bulbs and batteries</a>
           </div>

@@ -8,6 +8,36 @@
           <script src="https:use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
           <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">  
           <link rel="stylesheet" href="products.css"/>  
+          <style>
+            .overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: white;
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: black;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+          </style>
               
           </head>
     <body>      
@@ -58,6 +88,9 @@
 <div class="row">
  <div class="col-md-3">
   <img src="images/sukuma-wiki.jpg" alt="Avatar" style="width:100%">
+  <div class="overlay">
+    <div class="text">Hello World</div>
+  </div>
   <div class="container">
     <h5><b>sukuma-wiki</b></h5> 
     <p>PRICE KES 30.00per bunch</p> 
@@ -79,6 +112,9 @@
   </div>
   <div class="col-md-3">
     <img src="images/spinach.jpg" alt="Avatar" style="width:100%">
+    <div class="overlay">
+      <div class="text">Hello World</div>
+    </div>
     <div class="container">
       <h5><b>spinach</b></h5> 
       <p>PRICE KES 50.00 per bunch</p> 
@@ -100,6 +136,9 @@
     </div>
     <div class="col-md-3">
       <img src="images/local-orange.jpg" alt="Avatar" style="width:100%">
+      <div class="overlay">
+        <div class="text">Hello World</div>
+      </div>
       <div class="container">
         <h5><b>oranges</b></h5> 
         <p>PRICE KES 100.00 PER KG</p> 
@@ -121,6 +160,9 @@
       </div>
       <div class="col-md-3">
         <img src="images/broccoli.jpg" alt="Avatar" style="width:100%">
+        <div class="overlay">
+          <div class="text">Hello World</div>
+        </div>
         <div class="container">
           <h5><b>BROCCOLI</b></h5> 
           <p>PRICE KES 120.00 PER KG</p> 
@@ -149,7 +191,7 @@
      <p>PRICE 170.00 PER KG</p> 
      <p>Fruits</p>
      <div class="overlay">
-       <button type="button" class="btn btn-secondary" title="more like this"><i class="fa fa-eye"></i></button>
+       <button type="button" class="btn btn-secondary" title="more like this"><i class="fa fa-eye"></i><a href="produce.html"></a></button>
        <button type="button" class="btn btn-secondary" title="Add to cart"><i class="fa fa-shopping-cart"></i></button>
      </div>
      <label>QUANTITY:</label>
