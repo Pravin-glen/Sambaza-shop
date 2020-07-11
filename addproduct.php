@@ -56,5 +56,24 @@ if(isset($_POST['add'])){
             </table>
             <input type="submit" name="add" value="add"/>
 </form>    
+<h1>Categories</h1>
+        <form action="" method="post">
+            <table>
+                <tr>
+                    <td>id</td>
+                    <td><input type="integer" name="id"/></td>
+                </tr>
+                <tr>
+                    <td>description</td>
+                    <td><input type="text" name="name"/></td>
+                </tr>
+                <tr>
+                    <td>imageurl</td>
+                    <td><input type="integer" name="item order"/></td>
+                </tr>
+               
+            </table>
+            <input type="submit" name="add" value="add"/>
+</form>    
     </body>
 </html>        
