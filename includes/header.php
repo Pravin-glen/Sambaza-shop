@@ -46,6 +46,9 @@
             </li><li class="nav-item">
                 <a class="nav-link" href="admin/index.html">Admin</a>
             </li>
+            </li><li class="nav-item">
+                <a class="nav-link" href="shoppingcart.html">Cart</a>
+            </li>
             
           </ul>
           <form class="form-inline my-2 my-lg-0">

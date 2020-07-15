@@ -1,4 +1,5 @@
 <?php
+    include('includes/session.php');
     include("includes/header.php");
     
 ?>
@@ -10,8 +11,8 @@
         <div class="dropdown">
           <button class="dropbtn dropdown-toggle">Electronics</button>
           <div class="dropdown-menu">
-            <a class="dropdown-item"href="phonesandaccess.html">Phone and Phones acessories</a>
-            <a class="dropdown-item"href="#">Appliances</a>
+            <a class="dropdown-item"href="produce.php?p=phoneaccesories">Phone and Phones acessories</a>
+            <a class="dropdown-item"href="produce.php?p=Appliances">Appliances</a>
             <a class="dropdown-item" href="#">Computing and computing accessories</a>
           </div>
         </div>
@@ -95,11 +96,20 @@
       </div>
       <div class="grid-container">
       <div class="row">
+      <?php
+          include('includes/conn.php');
+          $STH = $DBH->query('SELECT * FROM products');
+
+          $STH->setFetchMode(PDO::FETCH_ASSOC);
+          while($row = $STH->fetch()) {
+            if($row['featured']){
+
+        ?>
        <div class="col-md-3">
-        <img src="images/2018 apple macbook air (499$).jpg" alt="Avatar" style="width:100%">
+        <img src="images/<?php echo $row['imgurl'];?>" alt="Avatar" style="width:100%">
         <div class="container">
-          <h5><b>2018 apple macbook air</b></h5> 
-          <p>PRICE 50000ksh</p> 
+          <h5><b><?php echo $row['name'];?></b></h5> 
+          <p>PRICE <?php echo $row['price'];?>ksh</p> 
           <div class="overlay">
             <button type="button" class="btn btn-secondary" title="more like this"><i class="fa fa-eye"></i></button>
             <button type="button" class="btn btn-secondary" title="Add to cart"><i class="fa fa-shopping-cart"></i></button>
@@ -113,136 +123,14 @@
           <i class="fa fa-star-o"></i>
         </div>
         </div>
-        <div class="col-md-3">
-          <img src="images/DIGITAL-MICROWAVE.jpg" alt="Avatar" style="width:100%">
-          <div class="container">
-            <h5><b>Digital Microwave</b></h5> 
-            <p>PRICE 7000ksh</p> 
-            <div class="overlay">
-              <button type="button" class="btn btn-secondary" title="more like this "><i class="fa fa-eye"></i></button>
-              <button type="button" class="btn btn-secondary" title="Add to cart"><i class="fa fa-shopping-cart"></i></button>
+            <?php
+            }}
+            ?>
             </div>
           </div>
-          <div class="product-bottom text-center">
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star-half-o"></i>
-            <i class="fa fa-star-o"></i>
-          </div>
-          </div>
-          <div class="col-md-3">
-            <img src="images/DOUBLE-DOOR-FRIDGE.jpg" alt="Avatar" style="width:100%">
-            <div class="container">
-              <h5><b>Double door fridge </b></h5> 
-              <p>PRICE 60000ksh</p> 
-              <div class="overlay">
-                <button type="button" class="btn btn-secondary" title="more like this"><i class="fa fa-eye"></i></button>
-                <button type="button" class="btn btn-secondary" title="Add to cart"><i class="fa fa-shopping-cart"></i></button>
-              </div>
-            </div>
-            <div class="product-bottom text-center">
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star-half-o"></i>
-              <i class="fa fa-star-o"></i>
-            </div>
-            </div>
-            <div class="col-md-3">
-              <img src="images/HD-DIGITAL-TV.jpg" alt="Avatar" style="width:100%">
-              <div class="container">
-                <h5><b>HD digital tv</b></h5> 
-                <p>PRICE 20000ksh</p> 
-                <div class="overlay">
-                  <button type="button" class="btn btn-secondary" title="more like this"><i class="fa fa-eye"></i></button>
-                  <button type="button" class="btn btn-secondary" title="Add to cart"><i class="fa fa-shopping-cart"></i></button>
-                </div>
-              </div>
-              <div class="product-bottom text-center">
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star-half-o"></i>
-                <i class="fa fa-star-o"></i>
-              </div>
-              </div>
-      </div>
-      <div class="row">
-        <div class="col-md-3">
-         <img src="images/MULTIMEDIA SUBWOOFER.jpg" alt="Avatar" style="width:100%">
-         <div class="container">
-           <h5><b>Multimedia Subwoofer</b></h5> 
-           <p>PRICE 3000ksh</p> 
-           <div class="overlay">
-             <button type="button" class="btn btn-secondary" title="more like this"><i class="fa fa-eye"></i></button>
-             <button type="button" class="btn btn-secondary" title="Add to cart"><i class="fa fa-shopping-cart"></i></button>
-           </div>
-         </div>
-         <div class="product-bottom text-center">
-           <i class="fa fa-star"></i>
-           <i class="fa fa-star"></i>
-           <i class="fa fa-star"></i>
-           <i class="fa fa-star-half-o"></i>
-           <i class="fa fa-star-o"></i>
-         </div>
-         </div>
-         <div class="col-md-3">
-          <img src="images/CCTV SECURITY CAMERAS.jpg" alt="Avatar" style="width:100%">
-          <div class="container">
-            <h5><b>CCTV security CAMERAS</b></h5> 
-            <p>PRICE 10000ksh</p> 
-            <div class="overlay">
-              <button type="button" class="btn btn-secondary" title="more like this"><i class="fa fa-eye"></i></button>
-              <button type="button" class="btn btn-secondary" title="Add to cart"><i class="fa fa-shopping-cart"></i></button>
-            </div>
-          </div>
-          <div class="product-bottom text-center">
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star-half-o"></i>
-            <i class="fa fa-star-o"></i>
-          </div>
-          </div>
-          <div class="col-md-3">
-            <img src="images/SAMSUNG-GALAXY-A11.jpg" alt="Avatar" style="width:100%">
-            <div class="container">
-              <h5><b>SAMSUNG-GALAXY-A11 PHONE brand new</b></h5> 
-              <p>PRICE 11000ksh</p> 
-              <div class="overlay">
-                <button type="button" class="btn btn-secondary" title="more like this"><i class="fa fa-eye"></i></button>
-                <button type="button" class="btn btn-secondary" title="Add to cart"><i class="fa fa-shopping-cart"></i></button>
-              </div>
-            </div>
-            <div class="product-bottom text-center">
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star-half-o"></i>
-              <i class="fa fa-star-o"></i>
-            </div>
-            </div>
-            <div class="col-md-3">
-              <img src="images/sony-ps4-console+fifa.jpg" alt="Avatar" style="width:100%">
-              <div class="container">
-                <h5><b>sony-ps4-console plus fifa 20 game included</b></h5> 
-                <p>PRICE 70000ksh</p> 
-                <div class="overlay">
-                  <button type="button" class="btn btn-secondary" title="more like this"><i class="fa fa-eye"></i></button>
-                  <button type="button" class="btn btn-secondary" title="Add to cart"><i class="fa fa-shopping-cart"></i></button>
-                </div>
-              </div>
-              <div class="product-bottom text-center">
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star-half-o"></i>
-                <i class="fa fa-star-o"></i>
-              </div>
-         </div>
-         </div>
 
+
+      
 
   <section class="featured-products">
    
