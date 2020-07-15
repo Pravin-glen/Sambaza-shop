@@ -66,8 +66,9 @@ $STH->setFetchMode(PDO::FETCH_ASSOC);
                             Delete
                         </button></td>
                       </tr>
-                      <?php }
-                            ?>
+                      <?php
+                       }
+                        ?>
                       <tr>
                     </tbody>
                   </table>
@@ -101,11 +102,11 @@ $STH->setFetchMode(PDO::FETCH_ASSOC);
                         </tr>
                         <tr>
                             <td>Contacts</td>
-                            <td><input type="tel" name="Contacts"/></td>
+                            <td><input type="tel" name="contacts"/></td>
                         </tr>
                         <tr>
                             <td>Address</td>
-                            <td><input type="text" name="Address"/></td>
+                            <td><input type="text" name="address"/></td>
                         </tr>
                         <tr>
                             <td>featured</td>
