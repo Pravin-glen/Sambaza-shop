@@ -19,6 +19,11 @@ footer{
 }
 
 .text{
-    padding-right: 0%
+    padding-right: 0%;
     text-align: center;
+}
+.rating li{
+    display: inline;
+    list-style-type: none;
+
 }

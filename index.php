@@ -1,47 +1,36 @@
 <?php
     include('includes/session.php');
     include("includes/header.php");
-    
+    include("includes/conn.php");
 ?>
 <!-- navbar begin -->
 
 <!-- navbar end -->
+
 <main class="top-section">
     <nav class="vertical-menu nav flex-column bg-warning">
+      <?php
+        $STH = $DBH->query('SELECT categories.id as id,categories.name as name,categories.itemorder as itemorder FROM `categories`,subcategories WHERE categories.id = subcategories.category ORDER BY itemorder' );
+
+        $STH->setFetchMode(PDO::FETCH_ASSOC);
+        while($row = $STH->fetch()){
+          $catid=$row['id'];
+      ?>
         <div class="dropdown">
-          <button class="dropbtn dropdown-toggle">Electronics</button>
+          <button class="dropbtn dropdown-toggle"><?php echo $row['name'];?></button>
           <div class="dropdown-menu">
-            <a class="dropdown-item"href="produce.php?p=phoneaccesories">Phone and Phones acessories</a>
-            <a class="dropdown-item"href="produce.php?p=Appliances">Appliances</a>
-            <a class="dropdown-item" href="#">Computing and computing accessories</a>
+          <?php
+            $STH1 = $DBH->query("SELECT * FROM subcategories where category=$catid");
+
+            $STH1->setFetchMode(PDO::FETCH_ASSOC);
+              while($row1 = $STH1->fetch()){
+                ?>
+                <a class="dropdown-item" href="produce.php?catid=<?php echo $row['id']; ?>"><?php echo $row['name']; ?></a>
+              <?php }?>
           </div>
         </div>
-        <div class="dropdown">
-          <button class="dropbtn dropdown-toggle">Produces</button>
-          <div class="dropdown-menu">
-            <a class="dropdown-item" href="produce.html">Vegetables</a>
-            <a class="dropdown-item" href="#">Fruits</a>
-            <a class="dropdown-item" href="#">Dairy products</a>
-            <a class="dropdown-item" href="#">Cereals</a>
-          </div>
-        </div>
-        <div class="dropdown">
-          <button class="dropbtn dropdown-toggle">Household supplies</button>
-          <div class="dropdown-menu">
-            <a class="dropdown-item" href="householditems.html">luandry </a>
-            <a class="dropdown-item" href="#">House cleaners</a>
-            <a class="dropdown-item" href="#">Bulbs and batteries</a>
-          </div>
-        </div>  
-        <div class="dropdown">
-          <button class="dropbtn dropdown-toggle">Fashion/Lifestyle</button>
-          <div class="dropdown-menu">
-            <a class="dropdown-item" href="#">Mens Fashion</a>
-            <a class="dropdown-item" href="#">Womens Fashion</a>
-            <a class="dropdown-item" href="#">Kids Fashion</a>
-            <a class="dropdown-item" href="#">Exclusive Fashion</a>
-          </div>
-        </div>
+              <?php }?>
+        
     </nav>
     <!---Image Sliding-->
     <article class="slides">
@@ -119,8 +108,8 @@
           <i class="fa fa-star"></i>
           <i class="fa fa-star"></i>
           <i class="fa fa-star"></i>
-          <i class="fa fa-star-half-o"></i>
-          <i class="fa fa-star-o"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
         </div>
         </div>
             <?php
