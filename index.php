@@ -8,7 +8,7 @@
 <!-- navbar end -->
 
 <main class="top-section">
-    <nav class="vertical-menu nav flex-column bg-warning">
+    <nav class="vertical-menu nav flex-column bg-success">
       <?php
         $STH = $DBH->query('SELECT categories.id as id,categories.name as name,categories.itemorder as itemorder FROM `categories`,subcategories WHERE categories.id = subcategories.category ORDER BY itemorder' );
 
@@ -42,7 +42,7 @@
         </ul>
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img src="images/mega-discount.jpg" style="width=88%;" alt="...">
+            <img src="images/wheat.jpg" style="width=88%;" alt="...">
             <div class="carousel-caption d-none d-md-block">
               <h1>The Sambaza shop website</h1>
               <p>Smart and convinient shopping.</p>
