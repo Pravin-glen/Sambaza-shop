@@ -1,6 +1,6 @@
 
 <!-- Footer -->
-  <footer class="page-footer font-small bg-warning">
+  <footer class="page-footer font-small bg-success">
 
     <!-- Footer Elements -->
     <div class="container ">

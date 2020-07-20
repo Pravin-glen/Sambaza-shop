@@ -1,0 +1,183 @@
+
+function foodGroupExplorer(fgid) {
+  var fruitsArray = [1, 'fruits', '#CE1A21'];
+  var vegetablesArray = [2, 'vegetables', '#00A74C'];
+  var grainsArray = [3, 'grains', '#F48120'];
+  var dairyArray = [4, 'dairy', '#3D84C5'];
+  var proteinsArray = [5, 'proteins', '#574186'];
+  var fgBorderBottom = document.getElementById("fg-section");
+  var fgArrowFruits = document.getElementById("fg-arrow-fruits");
+  var fgTextFruits = document.getElementById("fg-text-fruits");
+  var fgArrowVegetables = document.getElementById("fg-arrow-vegetables");
+  var fgTextVegetables = document.getElementById("fg-text-vegetables");
+  var fgArrowGrains = document.getElementById("fg-arrow-grains");
+  var fgTextGrains = document.getElementById("fg-text-grains");
+  var fgArrowDairy = document.getElementById("fg-arrow-dairy");
+  var fgTextDairy = document.getElementById("fg-text-dairy");
+  var fgArrowProteins = document.getElementById("fg-arrow-proteins");
+  var fgTextProteins = document.getElementById("fg-text-proteins");
+
+  switch (fgid) {
+    case 1:
+      fgArrowVegetables.style.display = "none";
+      fgTextVegetables.style.display = "none";
+      fgArrowGrains.style.display = "none";
+      fgTextGrains.style.display = "none";
+      fgArrowDairy.style.display = "none";
+      fgTextDairy.style.display = "none";
+      fgArrowProteins.style.display = "none";
+      fgTextProteins.style.display = "none";
+      if (fgArrowFruits.style.display == "block") {
+          fgArrowFruits.style.display = "none";
+          fgTextFruits.style.display = "none";
+      } else {
+          changeSVGColor(fruitsArray[1], fruitsArray[2]);
+          changeSVGColorBack(vegetablesArray[1], vegetablesArray[2]);
+          changeSVGColorBack(grainsArray[1], grainsArray[2]);
+          changeSVGColorBack(dairyArray[1], dairyArray[2]);
+          changeSVGColorBack(proteinsArray[1], proteinsArray[2]);
+          fgArrowFruits.style.display = "block";
+          fgTextFruits.style.display = "block";
+          fgBorderBottom.style.borderBottom = "3px solid " + fruitsArray[2];
+      }
+      break;
+    case 2:
+      fgArrowFruits.style.display = "none";
+      fgTextFruits.style.display = "none";
+      fgArrowGrains.style.display = "none";
+      fgTextGrains.style.display = "none";
+      fgArrowDairy.style.display = "none";
+      fgTextDairy.style.display = "none";
+      fgArrowProteins.style.display = "none";
+      fgTextProteins.style.display = "none";
+      if (fgArrowVegetables.style.display == "block") {
+        fgArrowVegetables.style.display = "none";
+        fgTextVegetables.style.display = "none";
+
+      } else {
+        changeSVGColorBack(fruitsArray[1], fruitsArray[2]);
+        changeSVGColor(vegetablesArray[1], vegetablesArray[2]);
+        changeSVGColorBack(grainsArray[1], grainsArray[2]);
+        changeSVGColorBack(dairyArray[1], dairyArray[2]);
+        changeSVGColorBack(proteinsArray[1], proteinsArray[2]);
+        fgArrowVegetables.style.display = "block";
+        fgTextVegetables.style.display = "block";
+        fgBorderBottom.style.borderBottom = "3px solid " + vegetablesArray[2];
+      }
+      break;
+    case 3:
+      fgArrowFruits.style.display = "none";
+      fgTextFruits.style.display = "none";
+      fgArrowVegetables.style.display = "none";
+      fgTextVegetables.style.display = "none";
+      fgArrowDairy.style.display = "none";
+      fgTextDairy.style.display = "none";
+      fgArrowProteins.style.display = "none";
+      fgTextProteins.style.display = "none";
+      if (fgArrowGrains.style.display == "block") {
+        fgArrowGrains.style.display = "none";
+        fgTextGrains.style.display = "none";
+      } else {
+        changeSVGColorBack(fruitsArray[1], fruitsArray[2]);
+        changeSVGColorBack(vegetablesArray[1], vegetablesArray[2]);
+        changeSVGColor(grainsArray[1], grainsArray[2]);
+        changeSVGColorBack(dairyArray[1], dairyArray[2]);
+        changeSVGColorBack(proteinsArray[1], proteinsArray[2]);
+        fgArrowGrains.style.display = "block";
+        fgTextGrains.style.display = "block";
+        fgBorderBottom.style.borderBottom = "3px solid " + grainsArray[2];
+      }
+      break;
+    case 4:
+      fgArrowFruits.style.display = "none";
+      fgTextFruits.style.display = "none";
+      fgArrowVegetables.style.display = "none";
+      fgTextVegetables.style.display = "none";
+      fgArrowGrains.style.display = "none";
+      fgTextGrains.style.display = "none";
+      fgArrowProteins.style.display = "none";
+      fgTextProteins.style.display = "none";
+      if (fgArrowDairy.style.display == "block") {
+        fgArrowDairy.style.display = "none";
+        fgTextDairy.style.display = "none";
+      } else {
+        changeSVGColorBack(fruitsArray[1], fruitsArray[2]);
+        changeSVGColorBack(vegetablesArray[1], vegetablesArray[2]);
+        changeSVGColorBack(grainsArray[1], grainsArray[2]);
+        changeSVGColor(dairyArray[1], dairyArray[2]);
+        changeSVGColorBack(proteinsArray[1], proteinsArray[2]);
+        fgArrowDairy.style.display = "block";
+        fgTextDairy.style.display = "block";
+        fgBorderBottom.style.borderBottom = "3px solid " + dairyArray[2];
+      }
+      break;
+    case 5:
+      fgArrowFruits.style.display = "none";
+      fgTextFruits.style.display = "none";
+      fgArrowVegetables.style.display = "none";
+      fgTextVegetables.style.display = "none";
+      fgArrowGrains.style.display = "none";
+      fgTextGrains.style.display = "none";
+      fgArrowDairy.style.display = "none";
+      fgTextDairy.style.display = "none";
+      if (fgArrowProteins.style.display == "block") {
+        fgArrowProteins.style.display = "none";
+        fgTextProteins.style.display = "none";
+      } else {
+        changeSVGColorBack(fruitsArray[1], fruitsArray[2]);
+        changeSVGColorBack(vegetablesArray[1], vegetablesArray[2]);
+        changeSVGColorBack(grainsArray[1], grainsArray[2]);
+        changeSVGColorBack(dairyArray[1], dairyArray[2]);
+        changeSVGColor(proteinsArray[1], proteinsArray[2]);
+        fgArrowProteins.style.display = "block";
+        fgTextProteins.style.display = "block";
+        fgBorderBottom.style.borderBottom = "3px solid " + proteinsArray[2];
+      }
+      break;
+  }
+}
+
+
+function changeSVGColor(group, color) {  
+  var cls1 = document.getElementById('icon-' + group);
+  var cls2 = document.getElementById('icon-' + group);
+  cls1 = cls1.getElementsByTagName('circle');
+  cls2 = cls2.getElementsByTagName('path');
+  for (i = 0; i < cls1.length; i++) {
+    cls1[i].style.fill = '#fff';
+    cls1[i].style.stroke = color;
+    cls1[i].style.strokeWidth = 5;
+  }
+  for (i = 0; i < cls2.length; i++) {
+    cls2[i].style.fill = color;
+  }
+}
+function changeSVGColorBack(group, color) {
+  var cls1 = document.getElementById('icon-' + group);
+  var cls2 = document.getElementById('icon-' + group);
+  cls1 = cls1.getElementsByTagName('circle');
+  cls2 = cls2.getElementsByTagName('path');
+  for (i = 0; i < cls1.length; i++) {
+    cls1[i].style.fill = '';
+    cls1[i].style.stroke = '';
+  }
+  for (i = 0; i < cls2.length; i++) {
+    cls2[i].style.fill = '';
+  }
+}
+function show() {
+  if (document.getElementById('expand').style.display == 'none') {
+    document.getElementById('expand').style.display = 'block';
+    document.getElementById('icon-arrow').style.rotation='180deg';
+  } else {
+    document.getElementById('expand').style.display = 'none';
+    document.getElementById('icon-arrow').style.rotation='180deg';
+  }
+}
+
+window.onload = function() {
+  var myEle = document.getElementById("fg-section");
+    if(myEle){
+      foodGroupExplorer(1);
+    }
+};

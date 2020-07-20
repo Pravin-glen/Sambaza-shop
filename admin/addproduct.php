@@ -32,6 +32,7 @@ if(isset($_POST['add'])){
 }
 else{
     echo"click add button first";
+    echo"click delete button first";
 }
 header('location: products.php');
 ?>

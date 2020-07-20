@@ -4,5 +4,5 @@ $(document).ready(function () {
       $("#mdb-lightbox-ui").load("mdb-addons/mdb-lightbox-ui.html");
     });
   });
-   // Animations initialization
-   new WOW().init();
+// Animations initialization
+new WOW().init();
