@@ -50,11 +50,11 @@
             <li class="nav-item">
             <div class="dropdown">
             <a class="nav-link" href="#"><svg class="bi bi-person" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                </svg>Customer<br>care </a>
+                </svg>Need<br>assistance? </a>
               
                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-               <a class="dropdown-item" href="login.php">Needhelp?</a>
-               <a class="dropdown-item" href="signin.php">contacts</a>
+               <a class="dropdown-item" href="feedback.php">Needhelp?</a>
+               <a class="dropdown-item" href="feedback.php">contacts</a>
             </div>
             </div>
             </li>

@@ -6,11 +6,7 @@
 		<div class="card">
 			<div class="card-header">
 				<h3>Log In</h3>
-				<div class="d-flex justify-content-end social_icon bg-success">
-					<span><i class="fab fa-facebook-square bg-success"></i></span>
-					<span><i class="fab fa-google-plus-square"></i></span>
-					<span><i class="fab fa-twitter-square"></i></span>
-				</div>
+				
 			</div>
 			<div class="card-body">
 				<form>
@@ -30,6 +26,12 @@
 					<div class="row align-items-center remember">
 						<input type="checkbox">Remember Me
 					</div>
+					<div class="icons">
+					<a class="btn-floating btn-lg btn-fb bg-success" type="button" role="button"><i class="fab fa-facebook-f"></i></a>
+					<a class="btn-floating btn-lg btn-tw bg-success" type="button" role="button"><i class="fab fa-twitter"></i></a>
+					<a class="btn-floating btn-lg btn-ins bg-success" type="button" role="button"><i class="fab fa-instagram"></i></a>
+					</div>
+					
 					<div class="form-group">
 						<input type="submit" value="Login" class="btn float-right login_btn bg-success">
 					</div>
