@@ -34,13 +34,18 @@ if(mysql_num_rows($result) >0)
         ';           
     }
         $output .= '<tr>'
-        <td></td>
-        <td id="name"conte></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
+                <td></td>
+                <td id="name"contenteditable></td>
+                <td id="description"contenteditable></td>
+                <td id="imgurl"contenteditable></td>
+                <td id="price"contenteditable></td>
+                <td id="categoryid"contenteditable></td>
+                <td id="featured"contenteditable></td>
+                <td><button name="btn-add" id="btn_add" class="btn btn-xs btn-warning">add</button></td>
+                <td><button name="btn-delete" id="btn_delete" class="btn btn-xs btn-warning">delete</button></td>
+                <td id="name"contenteditable></td>
+            </tr>
+        
 
 }
 else{
@@ -48,3 +53,4 @@ else{
                    <td colspan="7">Data not found</td>
                </tr>';   
 }
+?>

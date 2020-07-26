@@ -8,28 +8,6 @@
           <script src="https:use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
           <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">  
           <link rel="stylesheet" href="products.css"/>  
-          <style>
-aside{
- margin-top: 5px;
- display: block;
-
-}
-li:hover{
-  background-color: black;
-}
-
-.text {
-  color: black;
-  font-size: 20px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  text-align: center;
-}
-          </style>
               
           </head>
     <body>      
@@ -66,26 +44,30 @@ li:hover{
           </form>
         </div>
       </nav>
+      <button class="dropbtn dropdown-toggle">Produces</button>
+      <div class="dropdown-menu">
+        <a class="dropdown-menu-item" href="produce.html">Vegetables</a>
+        <a class="dropdown-item" href="#">Fruits</a>
+        <a class="dropdown-item" href="#">Dairy products</a>
+        <a class="dropdown-item" href="#">Cereals</a>
+      </div>
     </div>
-   
-      <div style="margin-left:25%;padding:1px 16px;height:auto;">
     <h2>Top Selling Items</h2>
 </div>
 <div class="grid-container">
 <div class="row">
  <div class="col-md-3">
   <img src="images/sukuma-wiki.jpg" alt="Avatar" style="width:100%">
-  <div class="overlay">
-  
-  </div>
   <div class="container">
     <h5><b>sukuma-wiki</b></h5> 
     <p>PRICE KES 30.00per bunch</p> 
     <p>Vegetables</p>
-      <a href="#"><i class="fa fa-eye"></i></a>
-      <a href="#"><i class="fa fa-shopping-cart"></i></a>
+    <div class="overlay">
+      <button type="button" class="btn btn-secondary" title="more like this"><i class="fa fa-eye"></i></button>
+      <button type="button" class="btn btn-secondary" title="Add to cart"><i class="fa fa-shopping-cart"></i></button>
       <label>QUANTITY:</label>
       <input type="text" value="">
+    </div>
   </div>
   <div class="product-bottom text-center">
     <i class="fa fa-star"></i>
@@ -98,11 +80,13 @@ li:hover{
   <div class="col-md-3">
     <img src="images/spinach.jpg" alt="Avatar" style="width:100%">
     <div class="container">
-      <h5><b>spinach</b></h5> 
+      <a href="details.php?product=spinach"<h5><b>spinach</b></h5> 
       <p>PRICE KES 50.00 per bunch</p> 
       <p>Vegetables</p>
-      <a href="#"><i class="fa fa-eye"></i></a>
-      <a href="#"><i class="fa fa-shopping-cart"></i></a>
+      <div class="overlay">
+        <button type="button" class="btn btn-secondary" title="more like this "><i class="fa fa-eye"></i></button>
+        <button type="button" class="btn btn-secondary" title="Add to cart"><i class="fa fa-shopping-cart"></i></button>
+      </div>
       <label>QUANTITY:</label>
       <input type="text" value="">
     </div>
@@ -116,14 +100,14 @@ li:hover{
     </div>
     <div class="col-md-3">
       <img src="images/local-orange.jpg" alt="Avatar" style="width:100%">
-      <div class="overlay">
-      </div>
       <div class="container">
         <h5><b>oranges</b></h5> 
         <p>PRICE KES 100.00 PER KG</p> 
         <P>Fruits</P>
-        <a href="#"><i class="fa fa-eye"></i></a>
-        <a href="#"><i class="fa fa-shopping-cart"></i></a>
+        <div class="overlay">
+          <button type="button" class="btn btn-secondary" title="more like this"><i class="fa fa-eye"></i></button>
+          <button type="button" class="btn btn-secondary" title="Add to cart"><i class="fa fa-shopping-cart"></i></button>
+        </div>
         <label>QUANTITY:</label>
       <input type="text" value="">
       </div>
@@ -141,8 +125,10 @@ li:hover{
           <h5><b>BROCCOLI</b></h5> 
           <p>PRICE KES 120.00 PER KG</p> 
           <p>Vegetables</p>
-          <a href="#"><i class="fa fa-eye"></i></a>
-          <a href="#"><i class="fa fa-shopping-cart"></i></a>
+          <div class="overlay">
+            <button type="button" class="btn btn-secondary" title="more like this"><i class="fa fa-eye"></i></button>
+            <button type="button" class="btn btn-secondary" title="Add to cart"><i class="fa fa-shopping-cart"></i></button>
+          </div>
           <label>QUANTITY:</label>
       <input type="text" value="">
         </div>
@@ -162,8 +148,10 @@ li:hover{
      <h5><b>Apples</b></h5> 
      <p>PRICE 170.00 PER KG</p> 
      <p>Fruits</p>
-     <a href="#"><i class="fa fa-eye"></i></a>
-     <a href="#"><i class="fa fa-shopping-cart"></i></a>
+     <div class="overlay">
+       <button type="button" class="btn btn-secondary" title="more like this"><i class="fa fa-eye"></i></button>
+       <button type="button" class="btn btn-secondary" title="Add to cart"><i class="fa fa-shopping-cart"></i></button>
+     </div>
      <label>QUANTITY:</label>
       <input type="text" value="">
    </div>
@@ -181,8 +169,10 @@ li:hover{
       <h5><b>imported-oranges</b></h5> 
       <p>PRICE KES 180.00 PER KG</p> 
       <p>Fruits</p>
-      <a href="#"><i class="fa fa-eye"></i></a>
-      <a href="#"><i class="fa fa-shopping-cart"></i></a>
+      <div class="overlay">
+        <button type="button" class="btn btn-secondary" title="more like this"><i class="fa fa-eye"></i></button>
+        <button type="button" class="btn btn-secondary" title="Add to cart"><i class="fa fa-shopping-cart"></i></button>
+      </div>
       <label>QUANTITY:</label>
       <input type="text" value="">
     </div>
@@ -200,8 +190,10 @@ li:hover{
         <h5><b>strawberries</b></h5> 
         <p>PRICE KES 200.00 PER KG</p> 
         <p>Fruits</p>
-        <a href="#"><i class="fa fa-eye"></i></a>
-        <a href="#"><i class="fa fa-shopping-cart"></i></a>
+        <div class="overlay">
+          <button type="button" class="btn btn-secondary" title="more like this"><i class="fa fa-eye"></i></button>
+          <button type="button" class="btn btn-secondary" title="Add to cart"><i class="fa fa-shopping-cart"></i></button>
+        </div>
         <label>QUANTITY:</label>
       <input type="text" value="">
       </div>
@@ -219,8 +211,10 @@ li:hover{
           <h5><b>red-onion</b></h5> 
           <p>PRICE KES 250 PER KG</p>
           <p>Vegetables</p> 
-          <a href="#"><i class="fa fa-eye"></i></a>
-          <a href="#"><i class="fa fa-shopping-cart"></i></a>
+          <div class="overlay">
+            <button type="button" class="btn btn-secondary" title="more like this"><i class="fa fa-eye"></i></button>
+            <button type="button" class="btn btn-secondary" title="Add to cart"><i class="fa fa-shopping-cart"></i></button>
+          </div>
           <label>QUANTITY:</label>
       <input type="text" value="">
         </div>
@@ -231,7 +225,6 @@ li:hover{
           <i class="fa fa-star"></i>
           <i class="fa fa-star"></i>
         </div>
-   </div>
    </div>
    </div>
       </body>
