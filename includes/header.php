@@ -2,7 +2,7 @@
     <html lang="en">
     <head>
           <meta charset="utf-8">
-          <meta name="viewport" content="width=device-width, initial-scale=1">
+          <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
           <tittle></title>
           <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
           <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
@@ -42,7 +42,7 @@
             </div>
             </li>
             </li><li class="nav-item">
-                <a class="nav-link" href="admin/index.html">Admin</a>
+                <a class="nav-link" href="admin/index.php">Admin</a>
             </li>
             </li><li class="nav-item">
                 <a class="nav-link" href="shoppingcart.html">Cart</a>
@@ -50,7 +50,7 @@
             <li class="nav-item">
             <div class="dropdown">
             <a class="nav-link" href="#"><svg class="bi bi-person" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                </svg>Need<br>assistance? </a>
+                </svg>Customer service</a>
               
                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                <a class="dropdown-item" href="feedback.php">Needhelp?</a>

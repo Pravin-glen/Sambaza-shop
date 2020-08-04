@@ -18,6 +18,7 @@ $STH->setFetchMode(PDO::FETCH_ASSOC);
                             $_SESSION['success']."
                         </div>
                     ";
+                    unset($_SESSION['success']);
                 }
                 if (isset($_SESSION['error'])){
                     echo "
@@ -27,6 +28,7 @@ $STH->setFetchMode(PDO::FETCH_ASSOC);
                             $_SESSION['error']."
                         </div>
                     ";
+                    unset($_SESSION['error']);
                 }
                 ?>
                 <!-- Button trigger modal -->

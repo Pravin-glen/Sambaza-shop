@@ -49,14 +49,14 @@
             </div>
           </div>
           <div class="carousel-item">
-            <img src="images/mega-discount2.jpg" class="d-block w-100" alt="...">
+            <img src="images/display.jpg" style="width=88%;" alt="...">
             <div class="carousel-caption d-none d-md-block">
-              <h5>Second slide label</h5>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              <h5>Dairy products</h5>
+              <p></p>
             </div>
           </div>
           <div class="carousel-item">
-            <img src="images/mega-discount3.jpg" class="d-block w-100" alt="...">
+            <img src="images/deals.jpg" style="width=88%;" alt="...">
             <div class="carousel-caption d-none d-md-block">
               <h5>Third slide label</h5>
               <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
@@ -116,14 +116,15 @@
             }}
             ?>
             </div>
-          </div>
 
 
       
 
   <section class="featured-products">
+  
    
   </section>    
    <?php
     include("includes/footer.php");
     ?>
+    </div>

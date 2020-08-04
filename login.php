@@ -1,5 +1,30 @@
 <?php
-    include("includes/header.php");
+	include("includes/header.php");
+	include("includes/conn.php");
+if(isset($_POST['login'])){
+  $username=$_POST['username'];
+  $password=$_POST['password'];
+
+  $STH=$DBH->prepare("select username,password from admin where username=?");
+  $STH->bindParam(1,$username);
+  $STH->execute();
+  if($STH->rowCount()>=1){
+    $row=$STH->fetch();
+    if(password_verify($password,$row['password'])){
+      header('location: produce.php');
+    }
+    else{
+      echo "incorrect password";
+    }
+  }
+  else{
+    echo "account not found";
+  }
+}
+else{
+  echo "click login button";
+}
+	
 ?>
      <div class="container">
 	<div class="d-flex justify-content-center h-100">
@@ -9,19 +34,19 @@
 				
 			</div>
 			<div class="card-body">
-				<form>
+				<form action="" method="post">
 					<div class="input-group form-group">
 						<div class="input-group-prepend">
 							<span class="input-group-text"><i class="fas fa-user"></i></span>
 						</div>
-						<input type="text" class="form-control" placeholder="username">
+						<input type="text" name="username" class="form-control" placeholder="username">
 						
 					</div>
 					<div class="input-group form-group">
 						<div class="input-group-prepend">
 							<span class="input-group-text"><i class="fas fa-key"></i></span>
 						</div>
-						<input type="password" class="form-control" placeholder="password">
+						<input type="password" name="password" class="form-control" placeholder="password">
 					</div>
 					<div class="row align-items-center remember">
 						<input type="checkbox">Remember Me
@@ -33,7 +58,7 @@
 					</div>
 					
 					<div class="form-group">
-						<input type="submit" value="Login" class="btn float-right login_btn bg-success">
+						<button type="submit" name="login" class="btn btn-primary">Submit</button>
 					</div>
 				</form>
 			</div>
@@ -48,6 +73,3 @@
 		</div>
 	</div>
 </div>
-    <?php
-    include("includes/footer.php");
-    ?>

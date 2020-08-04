@@ -1,14 +1,22 @@
-<!DOCTYPE html>
-<html>
+<DOCTYPE html>
+    <html lang="en">
     <head>
-        <title>Sambaza shop: Admin Login</title>
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-        <link type="text/css" rel="stylesheet" href="styles.css">
-    </head>
+          <meta charset="utf-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+          <tittle></title>
+          <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+          <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+          <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+          <script src="https:use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+          <link rel="stylesheet" href="styles/styles.css" />
+          <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+          <link rel="stylesheet" href="styles/categories.css" />    
+                
+    <head>
     <body>
     <div class="content-wrapper">
         <header>
-            <nav id="navbar-example2" class="navbar navbar-light bg-light">
+            <nav id="navbar-example2" class="navbar navbar-light bg-success">
                 <a class="navbar-brand" href="#">Sambaza Shop</a>
                 <ul class="nav nav-pills">
                   <li class="nav-item dropdown">
@@ -47,5 +55,3 @@
                 </nav>
 
             </aside>
-            
-       

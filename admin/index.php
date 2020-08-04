@@ -1,3 +1,30 @@
+<?php
+include("../includes/conn.php");
+if(isset($_POST['login'])){
+  $username=$_POST['username'];
+  $password=$_POST['password'];
+
+  $STH=$DBH->prepare("select username,password from admin where username=?");
+  $STH->bindParam(1,$username);
+  $STH->execute();
+  if($STH->rowCount()>=1){
+    $row=$STH->fetch();
+    if(password_verify($password,$row['password'])){
+      header('location: dashboard.php');
+    }
+    else{
+      echo "incorrect password";
+    }
+  }
+  else{
+    echo "account not found";
+  }
+}
+else{
+  echo "click login button";
+}
+
+?>
 <!DOCTYPE html>
 <html>
     <head>
@@ -18,21 +45,21 @@
     <body>
 
 
-        <form action="dashboard.php">
+        <form action="" method="post">
             <h1>Login to Continue</h1>
             <div class="form-group">
-              <label for="exampleInputEmail1">Email address</label>
-              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              <label for="exampleInputusername">username</label>
+              <input type="text" name="username"class="form-control" id="exampleInputusername" aria-describedby="emailHelp">
             </div>
             <div class="form-group">
               <label for="exampleInputPassword1">Password</label>
-              <input type="password" class="form-control" id="exampleInputPassword1">
+              <input type="password" name="password"class="form-control" id="exampleInputPassword1">
             </div>
             <div class="form-group form-check">
               <input type="checkbox" class="form-check-input" id="exampleCheck1">
               <label class="form-check-label" for="exampleCheck1">Remember Me</label>
             </div>
-            <button type="submit" class="btn btn-primary">Submit</button>
+            <button type="submit" name="login" class="btn btn-primary">Submit</button>
           </form>
 
 
