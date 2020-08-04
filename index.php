@@ -96,6 +96,7 @@
         ?>
        <div class="col-md-3">
         <img src="images/<?php echo $row['imgurl'];?>" alt="Avatar" style="width:100%">
+        
         <div class="container">
           <h5><b><?php echo $row['name'];?></b></h5> 
           <p>PRICE <?php echo $row['price'];?>ksh</p> 

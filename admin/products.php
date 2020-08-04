@@ -95,21 +95,21 @@ $STH->setFetchMode(PDO::FETCH_ASSOC);
                             <td><input type="text" name="pname"/></td>
                         </tr>
                         <tr>
-                            <td>description</td>
-                            <td><input type="text" name="description"/></td>
-                        </tr>
-                        <tr>
                             <td>imageurl</td>
                             <td><input type="file" name="imageurl"/></td>
                         </tr>
                         <tr>
                             <td>price</td>
-                            <td><input type="text" name="price"/></td>
+                            <td><input type="textarea" name="price"/></td>
                         </tr>
                         <tr>
                             <td>featured</td>
                             <td><input type="text" name="featured"/></td>
                         </tr>
+                        <tr>
+                            <label for="exampleFormControlTextarea1">Description</label>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                         </tr>
                     </table>
             </div>
             <div class="modal-footer">
