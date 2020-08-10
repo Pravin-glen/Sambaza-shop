@@ -103,6 +103,7 @@
           <div class="overlay">
             <button type="button" class="btn btn-secondary" title="more like this"><i class="fa fa-eye"></i></button>
             <button type="button" class="btn btn-secondary" title="Add to cart"><i class="fa fa-shopping-cart"></i></button>
+           <button> <a href="details.html"><i class="fa fa-info" aria-hidden="true"></i></a></button>
           </div>
         </div>
         <div class="product-bottom text-center">

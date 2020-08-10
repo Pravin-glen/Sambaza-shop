@@ -1,7 +1,7 @@
 <?php
 $servername = "localhost";
-$username = "username";
-$password = "password";
+$username = "root";
+$password = "";
 $dbname = "e_commerce";
 
 try {
@@ -10,9 +10,9 @@ try {
   $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
   // sql to delete a record
-  $sql = "DELETE FROM products(name,description,imgurl,price,categoryid,featured) values(?,?,?,?,?,?);
+  $sql ="DELETE FROM 'products' WHERE id=(name,description,imgurl,price,categoryid,featured) values(?,?,?,?,?,?)";
 
-  // use exec() because no results are returned
+// use exec() because no results are returned
   $conn->exec($sql);
   echo "Record deleted successfully";
 } catch(PDOException $e) {
