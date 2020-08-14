@@ -44,22 +44,19 @@
           <div class="carousel-item active">
             <img src="images/wheat.jpg" style="width=88%;" alt="...">
             <div class="carousel-caption d-none d-md-block">
-              <h1>The Sambaza shop website</h1>
-              <p>Smart and convinient shopping.</p>
+              <h1><p class="text-body bg-success">Sambaza Shop</p></h1>
             </div>
           </div>
           <div class="carousel-item">
             <img src="images/display.jpg" style="width=88%;" alt="...">
             <div class="carousel-caption d-none d-md-block">
-              <h5>Dairy products</h5>
-              <p></p>
+            <h2><p class="text-body bg-success">We deliver the best products</p></h2>
             </div>
           </div>
           <div class="carousel-item">
             <img src="images/deals.jpg" style="width=88%;" alt="...">
             <div class="carousel-caption d-none d-md-block">
-              <h5>Third slide label</h5>
-              <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+            <h2><p class="text-body bg-success">SHOP WITH SAMBAZA</p></h2>
             </div>
           </div>
         </div>
@@ -101,8 +98,8 @@
           <h5><b><?php echo $row['name'];?></b></h5> 
           <p>PRICE <?php echo $row['price'];?>ksh</p> 
           <div class="overlay">
-            <button type="button" class="btn btn-secondary" title="more like this"><i class="fa fa-eye"></i></button>
-            <button type="button" class="btn btn-secondary" title="Add to cart"><i class="fa fa-shopping-cart"></i></button>
+            <a href="details.php?id=<?php echo $row['id'];?>" role="button" class="btn btn-secondary" title="more like this"><i class="fa fa-eye"></i></a>
+            <a href="cart.php?action=add&id=<?php echo $row['id'];?>" role="button" class="btn btn-secondary" title="Add to cart"><i class="fa fa-shopping-cart"></i> add to cart</a>
           </div>
         </div>
         <div class="product-bottom text-center">

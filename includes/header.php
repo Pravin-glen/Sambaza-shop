@@ -1,3 +1,6 @@
+<?php
+  session_start();
+?>
 <DOCTYPE html>
     <html lang="en">
     <head>
@@ -46,6 +49,7 @@
             </li>
             </li><li class="nav-item">
                 <a class="nav-link" href="shoppingcart.html">Cart</a>
+                <span class="badge barge-warning"><?php if(isset ($_SESSION["cart"])) echo sizeof($_SESSION["cart"]);?></span>
             </li>
             <li class="nav-item">
             <div class="dropdown">

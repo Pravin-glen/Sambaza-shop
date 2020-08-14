@@ -1,9 +1,6 @@
 <DOCTYPE html>
-  <html lang="en">
-  <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1  shrink-to-fit=no">
-        <tittle></title>
+    <html lang="en">
+    <head>
           <meta charset="utf-8">
           <meta name="viewport" content="width=device-width, initial-scale=1  shrink-to-fit=no">
           <tittle></title>
@@ -13,12 +10,12 @@
           <script src="https:use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
           <link rel="stylesheet" href="styles/styles.css" />
           <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-          <link rel="stylesheet" href="styles/categories.css" /> 
-          <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-          <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>   
+          <link rel="stylesheet" href="styles/categories.css" />    
                 
-            
-<body>
+    <head>
+    <body>
+        
+        
     <!--navigation -->
   <div class="my-content-wrapper">
     <nav class="navbar navbar-expand-lg navbar-light bg-success">
@@ -45,7 +42,7 @@
             </div>
             </li>
             </li><li class="nav-item">
-                <a class="nav-link" href="admin/index.html">Admin</a>
+                <a class="nav-link" href="admin/index.php">Admin</a>
             </li>
             </li><li class="nav-item">
                 <a class="nav-link" href="shoppingcart.html">Cart</a>
@@ -53,7 +50,7 @@
             <li class="nav-item">
             <div class="dropdown">
             <a class="nav-link" href="#"><svg class="bi bi-person" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                </svg>Need<br>assistance? </a>
+                </svg>Customer service</a>
               
                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                <a class="dropdown-item" href="feedback.php">Needhelp?</a>
@@ -70,132 +67,101 @@
         </div>
       </nav>
 
-<section class="mb-5">
 
-  <div class="row">
-    <div class="col-md-5 mb-3 mb-md-0">
 
-      <div id="mdb-lightbox-ui"></div>
+<?php
 
-      <div class="mdb-lightbox">
 
-        <div class="row product-gallery mx-1">
+session_start();
+include('db.php');
+$status="";
+if (isset($_POST['code']) && $_POST['code']!=""){
+$code = $_POST['code'];
+$result = mysqli_query($con,"SELECT * FROM `products` WHERE `code`='$code'");
+$row = mysqli_fetch_assoc($result);
+$name = $row['name'];
+$code = $row['code'];
+$price = $row['price'];
+$image = $row['image'];
 
-          <div class="col-10 mb-0">
-            <figure class="view overlay rounded z-depth-1 main-img">
-              <a href="images/APPLES.jpg"
-                data-size="710x823">
-                <img src="images/APPLES.jpg"
-                  class="img-fluid z-depth-1">
-              </a>
-            </figure>
-          </div>
-          <div class="col-12">
-            <div class="row">
-              <div class="col-3">
-                <div class="view overlay rounded z-depth-1 gallery-item">
-                  <img src="images/APPLES.jpg"
-                    class="img-fluid">
-                  <div class="mask rgba-white-slight"></div>
-                </div>
-              </div>
-              <div class="col-3">
-                <div class="view overlay rounded z-depth-1 gallery-item">
-                  <img src="images/APPLES.jpg"
-                    class="img-fluid">
-                  <div class="mask rgba-white-slight"></div>
-                </div>
-              </div>
-              <div class="col-3">
-                <div class="view overlay rounded z-depth-1 gallery-item">
-                  <img src="images/APPLES.jpg"
-                    class="img-fluid">
-                  <div class="mask rgba-white-slight"></div>
-                </div>
-              </div>
-              <div class="col-3">
-                <div class="view overlay rounded z-depth-1 gallery-item">
-                  <img src="images/APPLES.jpg"
-                    class="img-fluid">
-                  <div class="mask rgba-white-slight"></div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+$cartArray = array(
+	$code=>array(
+	'name'=>$name,
+	'code'=>$code,
+	'price'=>$price,
+	'quantity'=>1,
+	'image'=>$image)
+);
 
-      </div>
+if(empty($_SESSION["shopping_cart"])) {
+	$_SESSION["shopping_cart"] = $cartArray;
+	$status = "<div class='box'>Product is added to your cart!</div>";
+}else{
+	$array_keys = array_keys($_SESSION["shopping_cart"]);
+	if(in_array($code,$array_keys)) {
+		$status = "<div class='box' style='color:red;'>
+		Product is already added to your cart!</div>";	
+	} else {
+	$_SESSION["shopping_cart"] = array_merge($_SESSION["shopping_cart"],$cartArray);
+	$status = "<div class='box'>Product is added to your cart!</div>";
+	}
 
-    </div>
-    <div class="col-md-6">
+	}
+}
+?>
 
-      <h5>APPLE</h5>
-      <p class="mb-2 text-muted text-uppercase small">Apples</p>
-      <ul class="rating">
-        <li>
-          <i class="fas fa-star fa-sm text-primary"></i>
-        </li>
-        <li>
-          <i class="fas fa-star fa-sm text-primary"></i>
-        </li>
-        <li>
-          <i class="fas fa-star fa-sm text-primary"></i>
-        </li>
-        <li>
-          <i class="fas fa-star fa-sm text-primary"></i>
-        </li>
-        <li>
-          <i class="far fa-star fa-sm text-primary"></i>
-        </li>
-      </ul>
-      <p><span class="mr-1"><strong>ksh 20</strong></span></p>
-      <h1>Short description</h1>
-      <p class="pt-1">They are better source of vitamins.</p>
-      <div class="table-responsive">
-        <table class="table table-sm table-borderless mb-0">
-          <tbody>
-            <tr>
-              <th class="pl-0 w-25" scope="row"><strong>Model</strong></th>
-              <td>red</td>
-            </tr>
-            <tr>
-              <th class="pl-0 w-25" scope="row"><strong>Color</strong></th>
-              <td>green</td>
-            </tr>
-            <tr>
-              <th class="pl-0 w-25" scope="row"><strong>Delivery</strong></th>
-              <td>Kenya</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-      <hr>
-      <h1>Quantity</h1>
-      <div class="def-number-input number-input safari_only">
-        <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()" class="minus"></button>
-        <input class="quantity" min="0" name="quantity" value="1" type="number">
-        <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="plus"></button>
-      </div>
-      <div class="pull-right" style="margin: 10px">
-        <a href="shoppingcart.html" class="btn btn-success pull-right">proceed to shopping cart</a>
-      </div>
-    </div>
-  </div>
-  <div class="container ">
-    <h2>Seller information</h2>
-    <button type="button" class="btn btn-info bg-success" data-toggle="collapse" data-target="#demo">JOMAC ENTERPRISE</button>
-    <div id="demo" class="collapse">
-      Email:jomacenterprise@gmail.com <br/>
-      Ratings of products sold: 80% <br/>
-      Followers:1700
-    </div>
-  </div>
- 
+<html>
+<head>
+<title>Sambaza shopping cart</title>
+<link rel='stylesheet' href='css/style.css' type='text/css' media='all' />
+</head>
+<body>
+<div style="width:700px; margin:50 auto;">
+
+<h2>Sambaza shopping cart</h2>   
+
+<?php
+if(!empty($_SESSION["shopping_cart"])) {
+$cart_count = count(array_keys($_SESSION["shopping_cart"]));
+?>
+<div class="cart_div">
+<a href="cart.php"><img src="cart-icon.png" /> Cart<span><?php echo $cart_count; ?></span></a>
+</div>
+<?php
+}
+
+$result = mysqli_query($con,"SELECT * FROM `products`");
+while($row = mysqli_fetch_assoc($result)){
+		echo "<div class='product_wrapper'>
+			  <form method='post' action=''>
+			  <input type='hidden' name='code' value=".$row['code']." />
+			  <div class='image'><img src='".$row['image']."' /></div>
+			  <div class='name'>".$row['name']."</div>
+		   	  <div class='price'>ksh".$row['price']."</div>
+			  <button type='submit' class='buy'>Buy Now</button>
+			  </form>
+		   	  </div>";
+        }
+mysqli_close($con);
+?>
+
+<div style="clear:both;"></div>
+
+<div class="message_box" style="margin:10px 0px;">
+<?php echo $status; ?>
+</div>
+
+<br /><br />
+
+</div>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
 <!-- Footer -->
   <footer class="page-footer font-small bg-success">
 
     <!-- Footer Elements -->
-    <div class="container col-sm-12">
+    <div class="container ">
 
       <!-- Grid row-->
       <div class="row">
@@ -247,8 +213,8 @@
   </footer>
   <!-- Footer -->  
 </div> 
-
-</section>
-<!--Section: Block Content-->
+<!-- Footer -->  
+</body>
+</html>
 </body>
 </html>

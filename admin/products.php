@@ -62,7 +62,7 @@ $STH->setFetchMode(PDO::FETCH_ASSOC);
                         <td><?php echo $row['price'];?></td>
                         <td><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#addproduct">
                             Edit
-                        </button><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#deleteproduct">
+                        </button><button type="button" name="delete" class="btn btn-primary" data-toggle="modal" data-target="#deleteprod">
                             Delete
                         </button></td>
                       </tr>
