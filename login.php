@@ -5,7 +5,7 @@ if(isset($_POST['login'])){
   $username=$_POST['username'];
   $password=$_POST['password'];
 
-  $STH=$DBH->prepare("select username,password from admin where username=?");
+  $STH=$DBH->prepare("select username,password from users where username=?");
   $STH->bindParam(1,$username);
   $STH->execute();
   if($STH->rowCount()>=1){
