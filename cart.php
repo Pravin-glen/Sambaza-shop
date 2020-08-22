@@ -15,17 +15,17 @@ die("Error. Product Doesn't Exist");
 
 switch($action) { //decide what to do
     case "add":
-    if (!isset($_SESSION['cart'][$product_id]))
-    $_SESSION['cart'][$product_id] = 0;
-    $_SESSION['cart'][$product_id]++; //add one to the quantity of the product with id $product_id
-    break;
+        if (!isset($_SESSION['cart'][$product_id]))
+        $_SESSION['cart'][$product_id] = 0;
+        $_SESSION['cart'][$product_id]++; //add one to the quantity of the product with id $product_id
+        break;
     case "remove": //remove one from the quantity of the product with id $product_id
-    $_SESSION['cart'][$product_id]--;
-    //if the quantity is zero, remove it completely (using the 'unset' function) -
-    //otherwise is will show zero, then -1, -2 etc when the user keeps removing items.
-    if($_SESSION['cart'][$product_id] == 0)
-    unset($_SESSION['cart'][$product_id]);
-    break;
+        $_SESSION['cart'][$product_id]--;
+        //if the quantity is zero, remove it completely (using the 'unset' function) -
+        //otherwise is will show zero, then -1, -2 etc when the user keeps removing items.
+        if($_SESSION['cart'][$product_id] == 0)
+        unset($_SESSION['cart'][$product_id]);
+        break;
     case "empty":
     unset($_SESSION['cart']); //unset the whole cart, i.e. empty the cart.
     break;
