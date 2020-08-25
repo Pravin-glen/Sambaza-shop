@@ -60,16 +60,8 @@ $STH->setFetchMode(PDO::FETCH_ASSOC);
                         <td><?php echo $row['name'];?></td>
                         <td><?php echo $row['description'];?></td>
                         <td><?php echo $row['price'];?></td>
-<<<<<<< HEAD
-                        <td><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#addproduct">
-                            Edit
-                        </button><button type="button" name="delete" class="btn btn-primary" data-toggle="modal" data-target="#deleteprod">
-                            Delete
-                        </button></td>
-=======
                         <td>  <button class="btn btn-success btn-sm edit btn-flat" data-id="<?php echo $row['id']; ?>"><i class="fa fa-edit"></i> Edit</button>
                             <button class="btn btn-danger btn-sm delete btn-flat" data-id="<?php echo $row['id']; ?>"><i class="fa fa-trash"></i> Delete</button></td>
->>>>>>> 5c158cb17075370b36130100b9a9df17f3afe3ae
                       </tr>
                             <?php }
                             ?>
