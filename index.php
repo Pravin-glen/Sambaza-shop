@@ -30,8 +30,27 @@
           </div>
         </div>
               <?php }?>
-        
     </nav>
+
+    <div class="modal fade" id="checkout" role="dialog">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title">Item Added to Cart</h4>
+          </div>
+          <div class="modal-body">
+            <form action="shoppingcart.php">
+              <div class="form-row">
+                <button type="button" class="btn btn-secondary btn-sm ml-auto" data-dismiss="modal">Continue Shopping</button>
+                <button type="submit" class="btn btn-primary btn-sm ml-auto">Checkout</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div> 
+
+
     <!---Image Sliding-->
     <article class="slides">
       <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
@@ -92,14 +111,14 @@
 
         ?>
        <div class="col-md-3">
-        <img src="images/<?php echo $row['imgurl'];?>" alt="Avatar" style="width:100%">
+        <img src="images/<?php echo $row['imgurl'];?>" alt="Avatar" style="width:100%" width="300" height="200">
         
         <div class="container">
           <h5><b><?php echo $row['name'];?></b></h5> 
           <p>PRICE <?php echo $row['price'];?>ksh</p> 
           <div class="overlay">
             <a href="details.php?id=<?php echo $row['id'];?>" role="button" class="btn btn-secondary" title="more like this"><i class="fa fa-eye"></i></a>
-            <a href="cart.php?action=add&id=<?php echo $row['id'];?>" role="button" class="btn btn-secondary" title="Add to cart"><i class="fa fa-shopping-cart"></i> add to cart</a>
+            <a role="button" data-toggle="modal" data-target="#checkout" href="cart.php?action=add&id=<?php echo $row['id'];?>" role="button" class="btn btn-secondary" title="Add to cart"><i class="fa fa-shopping-cart"></i> add to cart</a>
           </div>
         </div>
         <div class="product-bottom text-center">

@@ -7,15 +7,16 @@
     <head>
           <meta charset="utf-8">
           <meta name="viewport" content="width=device-width, initial-scale=1  shrink-to-fit=no">
-        
-          <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
-          <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
-          <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css">
-    
-
-          <link rel="stylesheet" href="styles/styles.css">
+          <tittle></title>
+         
+          <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" >
+          <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" >
+          <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" >
+          
+          
+          <link rel="stylesheet" href="styles/styles.css" >
           <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-          <link rel="stylesheet" href="styles/categories.css">    
+          <link rel="stylesheet" href="styles/categories.css" >    
                 
     <head>
     <body>
@@ -62,25 +63,28 @@
             </li>
             
           </ul>
-         
+          
           <form class="form-inline my-2 my-lg-0">
             <input class="form-control mr-sm-2" action="search.php" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-default" action="search.php" name="search" type="submit"></button>
           </form>
 
           <span class="navbar-text mr-1">
-            <a class="nav-link" href="shoppingcart.html">
-            <i class="fa fa-shopping-cart fa-lg"></i>&nbsp;<span class="sup bg-warning">
-              <?php if(isset($_SESSION['çart'])){
-                    echo sizeof($_SESSION['çart']);
-                    }
-                    else{
-                      echo '0';
-                    } 
+            <a class="nav-link" href="shoppingcart.php">
+            <i class="fa fa-shopping-cart fa-lg"></i>
+            <span class="sup bg-warning">
+              <?php 
+                if(isset($_SESSION['cart'])){
+                  echo sizeof($_SESSION['cart']);
+                }
+                else{
+                  echo '0';
+                }
+              
               ?>
-              
-              
-              </span>
+            </span>
           </a></span>
+
         </div>
       </nav>
 

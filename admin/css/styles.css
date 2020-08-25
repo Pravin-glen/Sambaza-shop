@@ -1,0 +1,21 @@
+.row-content{
+    min-height: 500px;
+}
+
+.navbar{
+    background-color: #003300;
+    color: floralwhite;
+}
+
+.sidebar{
+    background-color: #1b5e20;
+    color: floralwhite;
+}
+
+.nav{
+    color: floralwhite;
+}
+
+footer{
+    background-color: #4c8c4a;
+}
